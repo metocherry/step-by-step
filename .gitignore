@@ -1,0 +1,19 @@
+# Editors
+.vscode
+.idea
+
+# Modules
+node_modules
+
+# Product
+dist
+build
+
+# OS
+.DS_Store
+
+# Log
+*.log
+
+# Cache
+.cache

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timeline</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 14px;
+      }
+
+      .app {
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="joy-swiper joy-swiper-horizontal">
+        <div class="joy-swiper-presentation">
+          <div class="joy-swiper-slide">
+            <div class="joy-swiper-slide-content">
+              1
+            </div>
+          </div>
+          <div class="joy-swiper-slide">
+            <div class="joy-swiper-slide-content">
+              2
+            </div>
+          </div>
+          <div class="joy-swiper-slide">
+            <div class="joy-swiper-slide-content">
+              3
+            </div>
+          </div>
+        </div>
+        <div class="joy-swiper-prev-button"></div>
+        <div class="joy-swiper-next-button"></div>
+        <div class="joy-swiper-pagination joy-swiper-pagination-bullets">
+          <div class="joy-swiper-pagination-bullet"></div>
+          <div class="joy-swiper-pagination-bullet"></div>
+          <div class="joy-swiper-pagination-bullet"></div>
+        </div>
+      </div>
+    </div>
+    <script src="src/joyful-swiper.ts"></script>
+  </body>
+</html>
