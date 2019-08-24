@@ -3,8 +3,6 @@
 
   function bootstrap() {
     var sliders = document.querySelectorAll(".range-slider");
-    var range = document.querySelectorAll(".range-slider input[types='range']");
-    var value = document.querySelectorAll(".range-value");
 
     [].slice.apply(sliders).forEach(function (slider) {
       var range = slider.querySelector("input[type='range']");
