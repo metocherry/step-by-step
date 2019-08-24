@@ -1,0 +1,71 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 59%;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+
+.range-slider {
+  position: relative;
+  padding: 15px 75px 15px 0;
+  margin: 0 0 30px 0;
+}
+
+.range-slider input[type="range"] {
+  width: 100%; /* Firefox에서는 특정한 넓이 필요 */
+  height: 3px;
+  background: linear-gradient(to right, rgba(51,51, 51, 0) 0%, #333 93%, rgba(51, 51, 51, 0) 99%, rgba(51, 51, 51, 0) 100%);
+  outline: none;
+  -webkit-appearance: none; /* 기본 슬라이드 숨기기 */
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  background: white;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #555;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out 0s;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.range-slider input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* IE에서 기본슬라이드 숨기기 */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.range-slider .range-value {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: #333;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 33px;
+  width: 59px;
+  height: 35px;
+  transform: translateY(-50%);
+}
