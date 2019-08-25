@@ -1,15 +1,21 @@
 {
+  "private": true,
   "name": "step-by-step",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "card-ui:dev": "lerna run dev --scope=card-ui"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "lerna": "^3.16.4"
+    "lerna": "^3.16.4",
+    "parcel-bundler": "^1.12.3"
   }
 }
