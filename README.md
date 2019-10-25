@@ -34,3 +34,9 @@ Add a single dependency to matched packages
 lerna add parcel --dev
 lerna add typescript --scope=timeline
 ```
+
+### lerna run \<script\> [options]
+
+```bash
+lerna run start --scope=clip-path-mousemove-effect
+```

@@ -27,5 +27,6 @@
     "url": "https://github.com/metocherry/step-by-step/issues"
   },
   "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
